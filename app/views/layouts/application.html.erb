@@ -4,11 +4,65 @@
   <title>Portfolio</title>
   <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' %>
   <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' %>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="header">
+  <div class="container">
+    <div class="logo">
+      <%= link_to root_path do %>
+      <%= image_tag("logo.png") %>
+      <% end %>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="container">
+      <ul class="nav">
+        <li>
+          <%= link_to "Home", root_path %>
+        </li>
+      </ul>
+      <ul class="nav">
+        <li>
+          <%= link_to "Portfolio", portfolio_path %>
+        </li>
+      </ul>
+      <ul class="nav">
+        <li>
+          <%= link_to "Blog", "#" %>
+        </li>
+      </ul>
+      <ul class="nav">
+        <li>
+          <%= link_to "About", "#" %>
+        </li>
+      </ul>
+      <ul class="nav">
+        <li>
+          <%= link_to "Contact", "#" %>
+        </li>
+      </ul>
+    </div>
+    <div class="footer">
+      <ul class="list-inline footer-social">
+        <li>
+          <%= link_to "https://github.com/Hiroyuki-Shinoe", target: "_blank" do %>
+          <i class="fa fa-github-square"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "https://www.facebook.com/hiro.shinoe", target: "_blank" do %>
+          <i class="fa fa-facebook"></i>
+          <% end %>
+        </li>
+      </ul>
+      <p class="copyright">&copy; 2015 Hiro. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+</div>
 
 <%= yield %>
 
