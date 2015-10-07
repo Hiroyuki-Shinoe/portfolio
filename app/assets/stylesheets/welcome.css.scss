@@ -6,9 +6,9 @@
     color : #fff;
     margin-right: 270px;
     z-index: 1;
-    padding: 130px 0;
+    padding: 70px 0;
     position: relative;
-    background: url("coding.png") no-repeat;
+    background: url(born_to_learn.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -21,13 +21,4 @@
 .main p {
     font-size: 24px;
     font-weight: 200;
-}
-
-
-.content-left video {
-    position: fixed;
-    top: 0;
-    z-index: -100;
-    width: 100%;
-    height: auto;
 }
