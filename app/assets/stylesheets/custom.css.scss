@@ -1,2 +1,14 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+image {
+  padding: 3px;
+  border: solid 1px #eee;
+}
+
+.small_header {
+    background: #222;
+    padding: 30px 0 20px;
+    border-bottom: solid 3px #777;
+    color: #fff;
+}
